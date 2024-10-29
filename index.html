@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compañía 7R SAS – Empresa colombiana de ingeniería y construcción</title>
+    <meta name="description"
+        content="Compañía 7R es una empresa colombiana especializada en ingeniería y construcción, con experiencia en proyectos industriales, mineros, zonas francas y más.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="index">
+    <!-- Encabezado -->
+    <header>
+        <a href="index.html" class="logo-container">
+            <img id="logo" src="images/logo-7r-dark-removebg-preview.webp" alt="Logo Compañía 7R">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="areas-servicio.html">ÁREAS DE SERVICIO</a></li>
+                <li><a href="soluciones.html">SOLUCIONES</a></li>
+                <li><a href="#contacto-footer">CONTÁCTENOS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner principal con botones -->
+    <section class="banner">
+        <button class="banner-btn prev-btn">&#10094;</button>
+        <img id="banner1" src="images/banner1.webp" alt="BANNER 1">
+        <img id="banner2" src="images/banner2.webp" alt="BANNER 2">
+        <img id="banner3" src="images/banner3.webp" alt="BANNER 3">
+        <img id="banner4" src="images/banner4.webp" alt="BANNER 4">
+        <button class="banner-btn next-btn">&#10095;</button>
+    </section>
+
+    <!-- Bienvenida -->
+    <section class="contenido">
+        <h1>Bienvenido a Compañía 7R</h1>
+        <p>Estamos dedicados a la construcción de obras civiles, metalmecánicas y eléctricas. Proporcionamos confianza y
+            calidad en todos nuestros proyectos.</p>
+    </section>
+
+    <!-- Botón para ir al final de la página -->
+    <button id="scroll-to-footer" class="scroll-button">
+        &darr;
+    </button>
+
+    <!-- Áreas de servicio -->
+    <section class="areas-servicio">
+        <h2>Áreas de Servicio</h2>
+        <div class="servicios">
+            <div class="servicio">
+                <h3>Industria</h3>
+                <p>Ofrecemos servicios de ingeniería y construcción de plantas industriales.</p>
+            </div>
+            <div class="servicio">
+                <h3>Minería</h3>
+                <p>Asumimos los retos en los proyectos de ingeniería y construcción del sector minero.</p>
+            </div>
+            <div class="servicio">
+                <h3>Zona Franca</h3>
+                <p>Nuestra propuesta de valor nace de la experiencia en zonas francas.</p>
+            </div>
+            <div class="servicio">
+                <h3>Puertos</h3>
+                <p>Contamos con personal especializado para proyectos en puertos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section class="sobre-nosotros">
+        <h2>Compañía 7R</h2>
+        <p>Compañía 7R nace en 2009 en Barranquilla. Somos una empresa con un equipo humano de amplia experiencia en el
+            desarrollo de proyectos de inversión en diferentes sectores de la economía.</p>
+    </section>
+
+    <!-- Servicios Especiales -->
+    <section class="servicios-especiales">
+        <h2>Servicios Especiales</h2>
+        <ul>
+            <li>Usuario industrial de bienes y servicios en zonas francas.</li>
+            <li>Usuario comercial para actividades logísticas.</li>
+        </ul>
+    </section>
+
+    <!-- Elementos Diferenciadores -->
+    <section class="elementos-diferenciadores">
+        <h2>Elementos Diferenciadores</h2>
+        <ul>
+            <li><img src="images/icono-home_casco.png" alt="Seguridad"> Cumplimiento de las normas más altas de
+                seguridad.</li>
+            <li><img src="images/icono-home_reloj.png" alt="Planes de choque"> Planes de choque para proyectos en
+                marcha.</li>
+            <li><img src="images/icono-home_meta.png" alt="Fast Track"> Ejecución de proyectos fast track.</li>
+        </ul>
+    </section>
+
+    <!-- Galería de Proyectos -->
+    <section class="galeria">
+        <h2>Galería de Proyectos</h2>
+        <div class="proyectos">
+            <div class="proyecto">
+                <p>Trabajos de Sandblasting</p>
+            </div>
+            <div class="proyecto">
+                <p>Reparaciones Externas en Silos</p>
+            </div>
+            <div class="proyecto">
+                <p>Reparación de Concreto en Puente</p>
+            </div>
+            <div class="proyecto">
+                <p>Reparaciones en Muelle de Suministro</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section class="contacto">
+        <h2>Escríbenos</h2>
+        <form action="submit_form.php" method="post">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer id="contacto-footer">
+        <div class="info-contacto">
+            <p><strong>Barranquilla</strong></p>
+            <p>+57 350 642 2370</p>
+            <p>Carrera 77B Nº 57 – 141 Ofi. 1002</p>
+            <p><a href="mailto:info@c7rsas.com">info@c7rsas.com</a></p>
+        </div>
+        <div class="info-contacto">
+            <p><strong>Zona Franca La Cayena</strong></p>
+            <p>+57 318 336 5797</p>
+            <p>Kilómetro 8 Vía Barranquilla</p>
+        </div>
+        <div class="brochure">
+            <a href="brochure.pdf" download>Descarga aquí nuestro Brochure</a>
+        </div>
+
+        <!-- Redes sociales -->
+        <div class="redes-sociales">
+            <h3>Síguenos en:</h3>
+            <a href="https://www.linkedin.com/company/c7r/" target="_blank">
+                <img src="images/linkedin-removebg-preview.webp" alt="LinkedIn" style="width: 30px;">
+            </a>
+            <a href="https://www.facebook.com/7r/" target="_blank">
+                <img src="images/facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/7r/" target="_blank">
+                <img src="images/instagram-icon.png" alt="Instagram">
+            </a>
+        </div>
+
+        <p>© 2024 Compañía 7R. Todos los derechos reservados.<br>Desarrollado por <a
+                href="https://www.linkedin.com/in/isaac-padilla-9a12b81b1/" target="_blank">Isaac Padilla</a>.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
