@@ -1,0 +1,319 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header, footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo-container img {
+    width: 100px;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    display: flex;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+/* Contenido */
+.contenido, .areas-servicio, .sobre-nosotros, .servicios-especiales, .elementos-diferenciadores, .galeria, .contacto {
+    padding: 40px;
+    text-align: center;
+}
+
+.servicios, .proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.servicio, .proyecto {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+/* Contacto */
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contacto label, .contacto input, .contacto textarea, .contacto button {
+    margin: 10px 0;
+}
+
+/* Pie de página */
+.info-contacto, .brochure, .redes-sociales {
+    margin: 10px 0;
+}
+
+.redes-sociales a {
+    margin: 0 5px;
+    display: inline-block;
+}
+/* Estilos básicos para el header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: padding 0.3s ease;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 150px; /* Tamaño inicial del logo */
+    transition: width 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Reducción de tamaño del logo y ajuste del header al hacer scroll */
+.header-scroll #logo {
+    width: 80px; /* Tamaño reducido del logo */
+}
+
+.header-scroll {
+    padding: 10px 30px; /* Ajuste del padding en scroll */
+} 
+/* Ubicación fija y ajuste visual del logo y encabezado */
+header {
+    position: absolute; /* Fijo sobre el banner */
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: transparent; /* Fondo transparente para que se vea el banner detrás */
+    z-index: 10;
+    transition: padding 0.3s ease, background-color 0.3s ease;
+}
+
+.header-scroll {
+    background-color: #222; /* Fondo oscuro cuando haces scroll */
+}
+
+#logo {
+    width: 150px;
+    transition: width 0.3s ease;
+}
+
+.header-scroll #logo {
+    width: 80px;
+}
+
+/* Ajuste del color de los enlaces */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff; /* Blanco por defecto sobre el banner */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+
+/* Botones de navegación en el banner */
+.banner-btn {
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    transform: translateY(-50%);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* Botón para ir al pie de página */
+#scroll-to-footer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: salmon;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.scroll-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #ff6600; /* Color de fondo */
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.scroll-button:hover {
+    background-color: #e65c00; /* Color al pasar el ratón */
+}
+/* Cambia el color de los enlaces del encabezado a salmon si el body tiene la clase 'index' */
+
+/* Color salmón para la página activa */
+body.inicio .nav-link[href="index.html"],
+body.nosotros .nav-link[href="nosotros.html"],
+body.areas-servicio .nav-link[href="areas-servicio.html"],
+body.soluciones .nav-link[href="soluciones.html"],
+body.contacto .nav-link[href="contacto.html"] {
+    color: salmon;
+}
+/* Aplica color salmón a la opción "INICIO" dentro de la clase .index */
+.index nav ul li:first-child a {
+    color: salmon;
+}
+
+/* Cambia el color a salmón al pasar el cursor sobre cualquier enlace del menú */
+header nav ul li a:hover {
+    color: salmon;
+}
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header, footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Otros estilos adicionales según sea necesario */
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header, footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Otros estilos adicionales */
